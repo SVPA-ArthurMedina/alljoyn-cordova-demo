@@ -1,0 +1,16 @@
+{
+    "org.allseen.alljoyn": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/AllJoyn-Cordova/cordova-plugin-alljoyn",
+            "subdir": "."
+        }
+    },
+    "cordova-plugin-console": {
+        "source": {
+            "type": "git",
+            "url": "https://git-wip-us.apache.org/repos/asf/cordova-plugin-console.git",
+            "subdir": "."
+        }
+    }
+}

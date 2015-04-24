@@ -1,0 +1,794 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
+		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
+		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
+		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
+		305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */; };
+		3088BBBD154F3926009F9C59 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBB7154F3926009F9C59 /* Default-Landscape@2x~ipad.png */; };
+		3088BBBE154F3926009F9C59 /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBB8154F3926009F9C59 /* Default-Landscape~ipad.png */; };
+		3088BBBF154F3926009F9C59 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBB9154F3926009F9C59 /* Default-Portrait@2x~ipad.png */; };
+		3088BBC0154F3926009F9C59 /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBBA154F3926009F9C59 /* Default-Portrait~ipad.png */; };
+		3088BBC1154F3926009F9C59 /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBBB154F3926009F9C59 /* Default@2x~iphone.png */; };
+		3088BBC2154F3926009F9C59 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 3088BBBC154F3926009F9C59 /* Default~iphone.png */; };
+		308D05371370CCF300D202BF /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 308D052E1370CCF300D202BF /* icon-72.png */; };
+		308D05381370CCF300D202BF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 308D052F1370CCF300D202BF /* icon.png */; };
+		308D05391370CCF300D202BF /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 308D05301370CCF300D202BF /* icon@2x.png */; };
+		30B4F30019D5E07200D9F7D8 /* Default-667h.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B4F2FD19D5E07200D9F7D8 /* Default-667h.png */; };
+		30B4F30119D5E07200D9F7D8 /* Default-736h.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B4F2FE19D5E07200D9F7D8 /* Default-736h.png */; };
+		30B4F30219D5E07200D9F7D8 /* Default-Landscape-736h.png in Resources */ = {isa = PBXBuildFile; fileRef = 30B4F2FF19D5E07200D9F7D8 /* Default-Landscape-736h.png */; };
+		30C1856619D5FC0A00212699 /* icon-60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30C1856519D5FC0A00212699 /* icon-60@3x.png */; };
+		30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 30FC414816E50CA1004E6F35 /* icon-72@2x.png */; };
+		5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */; };
+		7E7966DE1810823500FA85AD /* icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D41810823500FA85AD /* icon-40.png */; };
+		7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D51810823500FA85AD /* icon-40@2x.png */; };
+		7E7966E01810823500FA85AD /* icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D61810823500FA85AD /* icon-50.png */; };
+		7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D71810823500FA85AD /* icon-50@2x.png */; };
+		7E7966E21810823500FA85AD /* icon-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D81810823500FA85AD /* icon-60.png */; };
+		7E7966E31810823500FA85AD /* icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966D91810823500FA85AD /* icon-60@2x.png */; };
+		7E7966E41810823500FA85AD /* icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DA1810823500FA85AD /* icon-76.png */; };
+		7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DB1810823500FA85AD /* icon-76@2x.png */; };
+		7E7966E61810823500FA85AD /* icon-small.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DC1810823500FA85AD /* icon-small.png */; };
+		7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E7966DD1810823500FA85AD /* icon-small@2x.png */; };
+		D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */; };
+		64AD744253E24BDEA28ED24B /* aj_about.c in Resources */ = {isa = PBXBuildFile; fileRef = 09347493B41147BD9A051093 /* aj_about.c */; };
+		AC6F8E1648754A1785437C23 /* aj_bufio.c in Resources */ = {isa = PBXBuildFile; fileRef = 365EE2B048C943839D4F5C5A /* aj_bufio.c */; };
+		E5881C7A18A74B2CB6A53531 /* aj_bus.c in Resources */ = {isa = PBXBuildFile; fileRef = 9B64AF13789348A0935B364D /* aj_bus.c */; };
+		3F3AC31414544D23B1100124 /* aj_cert.c in Resources */ = {isa = PBXBuildFile; fileRef = DD5E626FB729453C9271D091 /* aj_cert.c */; };
+		9EB742DAD5D149C9B68E9E41 /* aj_connect.c in Resources */ = {isa = PBXBuildFile; fileRef = AE243F965E4F43F6AFC402B9 /* aj_connect.c */; };
+		A50BFF77B4F840BEAFD429B6 /* aj_crc16.c in Resources */ = {isa = PBXBuildFile; fileRef = 21116D3012894DF4ADCD1FE2 /* aj_crc16.c */; };
+		C0185A6A84DB4716A60DD8DB /* aj_creds.c in Resources */ = {isa = PBXBuildFile; fileRef = 835A90FCE64E4AC1A9823EB8 /* aj_creds.c */; };
+		1F7A91882A214EE9ABB9C768 /* aj_crypto.c in Resources */ = {isa = PBXBuildFile; fileRef = DD2F10024D13439BB1F15E8D /* aj_crypto.c */; };
+		DB6870213A384055A7DACD1C /* aj_crypto_ecc.c in Resources */ = {isa = PBXBuildFile; fileRef = FF025B2AD44C414194652F08 /* aj_crypto_ecc.c */; };
+		21820AF3A644412C9EC71999 /* aj_crypto_sha2.c in Resources */ = {isa = PBXBuildFile; fileRef = 70E048F640AD4770A49A9110 /* aj_crypto_sha2.c */; };
+		454FB6644D4148829D74BC43 /* aj_debug.c in Resources */ = {isa = PBXBuildFile; fileRef = B162A53FB34145E1BDC323A9 /* aj_debug.c */; };
+		54D8BAEE538144EDB949BC3C /* aj_disco.c in Resources */ = {isa = PBXBuildFile; fileRef = 4BF7FD441E7D4CE29C63E6F2 /* aj_disco.c */; };
+		9AA67B514B224E1CB79486D4 /* aj_guid.c in Resources */ = {isa = PBXBuildFile; fileRef = CB7DEBF08E9B4CC5AD37FA35 /* aj_guid.c */; };
+		034E3EEDB78E4E5399FAA1BB /* aj_helper.c in Resources */ = {isa = PBXBuildFile; fileRef = 8EFB03F3DE7645D8B96C97C3 /* aj_helper.c */; };
+		43CE72C9174D49129E45FC30 /* aj_init.c in Resources */ = {isa = PBXBuildFile; fileRef = 74CD7F90157A4489998BB327 /* aj_init.c */; };
+		E0F146A54E8C4F9EA1F4688C /* aj_introspect.c in Resources */ = {isa = PBXBuildFile; fileRef = 7BC64AA2C7DD423181FCFCBE /* aj_introspect.c */; };
+		5C9DCB797290429E891287AB /* aj_keyauthentication.c in Resources */ = {isa = PBXBuildFile; fileRef = 3BB1E40CD9234512965ACE2C /* aj_keyauthentication.c */; };
+		2667ACB074C644FD9595DA37 /* aj_keyexchange.c in Resources */ = {isa = PBXBuildFile; fileRef = BD481EF1EC4F4355956D1BAB /* aj_keyexchange.c */; };
+		3977135D8FC34DEB93807A59 /* aj_link_timeout.c in Resources */ = {isa = PBXBuildFile; fileRef = 20678EE60A494ADC8031606C /* aj_link_timeout.c */; };
+		F652F930A220436D8FBC6E4B /* aj_msg.c in Resources */ = {isa = PBXBuildFile; fileRef = DDF59E5E6B1E4F4095F5D1D5 /* aj_msg.c */; };
+		C263F7D7373E44BE8FA35A69 /* aj_nvram.c in Resources */ = {isa = PBXBuildFile; fileRef = F53C71508B6B48FFA9ED482B /* aj_nvram.c */; };
+		5C02AC8F0D0B4DEE80EB7A1D /* aj_peer.c in Resources */ = {isa = PBXBuildFile; fileRef = DA92B49D309C4A2CA6E3DEB8 /* aj_peer.c */; };
+		B8BB021C16D342BB8C8F90AC /* aj_serial.c in Resources */ = {isa = PBXBuildFile; fileRef = A583ECFD412D46B78B5EE129 /* aj_serial.c */; };
+		09F04DF03F884E61B07F184F /* aj_serial_rx.c in Resources */ = {isa = PBXBuildFile; fileRef = 94456FC5F17447E884535442 /* aj_serial_rx.c */; };
+		FF2D3A8F58EB48278EF4AE8D /* aj_serial_tx.c in Resources */ = {isa = PBXBuildFile; fileRef = 960234CB8C264DB2B2A3F5F9 /* aj_serial_tx.c */; };
+		A8C1900D08DD42DC8F235EA9 /* aj_std.c in Resources */ = {isa = PBXBuildFile; fileRef = 99D436DB38F44EDFBC1A6D66 /* aj_std.c */; };
+		453A00065BEF463D921F9D6D /* aj_util.c in Resources */ = {isa = PBXBuildFile; fileRef = 450FC37910CC4E7B8ABE1339 /* aj_util.c */; };
+		5A173CC3C66C4F2EBEF219BC /* sha2.c in Resources */ = {isa = PBXBuildFile; fileRef = 3330F0E2FA4A4A31BF39B1E4 /* sha2.c */; };
+		2AD2EBEDA2274FA3A2D6980B /* aj_net.c in Resources */ = {isa = PBXBuildFile; fileRef = 1B3561335CEE4486A53A9842 /* aj_net.c */; };
+		41AF72DDA242472ABD6FB142 /* aj_sw_crypto.c in Resources */ = {isa = PBXBuildFile; fileRef = 4EA42782A36B4531AA103B76 /* aj_sw_crypto.c */; };
+		568A20699BA64469B8E6E2D7 /* aj_target_nvram.c in Resources */ = {isa = PBXBuildFile; fileRef = 5F78033297E84AE0819CA54F /* aj_target_nvram.c */; };
+		F4B92084548B498F921578CA /* aj_target_serial.c in Resources */ = {isa = PBXBuildFile; fileRef = C1754EC5BF8C4DB79E6B07EA /* aj_target_serial.c */; };
+		28E3ED51B788421888249E19 /* aj_target_util.c in Resources */ = {isa = PBXBuildFile; fileRef = 5106D2C782774AC19F4F115A /* aj_target_util.c */; };
+		F14445BB189F40278B0B4616 /* AllJoyn_Cordova.m in Sources */ = {isa = PBXBuildFile; fileRef = 521264F4DAA8432E857A2582 /* AllJoyn_Cordova.m */; };
+		837F23C8C203443E9A93AA43 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68744FAD59284FDB90B13CB5 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		301BF534109A57CC0062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+		301BF550109A68C00062928A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = CordovaLib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* AlljoynDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AlljoynDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F766FDD13BBADB100FB74C0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
+		1F766FE013BBADB100FB74C0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Localizable.strings; sourceTree = "<group>"; };
+		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
+		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
+		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		302D95EF14D2391D003F00A1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		302D95F014D2391D003F00A1 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		3088BBB7154F3926009F9C59 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		3088BBB8154F3926009F9C59 /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		3088BBB9154F3926009F9C59 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		3088BBBA154F3926009F9C59 /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		3088BBBB154F3926009F9C59 /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~iphone.png"; sourceTree = "<group>"; };
+		3088BBBC154F3926009F9C59 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		308D052E1370CCF300D202BF /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
+		308D052F1370CCF300D202BF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		308D05301370CCF300D202BF /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		30B4F2FD19D5E07200D9F7D8 /* Default-667h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h.png"; sourceTree = "<group>"; };
+		30B4F2FE19D5E07200D9F7D8 /* Default-736h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h.png"; sourceTree = "<group>"; };
+		30B4F2FF19D5E07200D9F7D8 /* Default-Landscape-736h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape-736h.png"; sourceTree = "<group>"; };
+		30C1856519D5FC0A00212699 /* icon-60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@3x.png"; sourceTree = "<group>"; };
+		30FC414816E50CA1004E6F35 /* icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72@2x.png"; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* AlljoynDemo-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AlljoynDemo-Prefix.pch"; sourceTree = "<group>"; };
+		5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		7E7966D41810823500FA85AD /* icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40.png"; sourceTree = "<group>"; };
+		7E7966D51810823500FA85AD /* icon-40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-40@2x.png"; sourceTree = "<group>"; };
+		7E7966D61810823500FA85AD /* icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-50.png"; sourceTree = "<group>"; };
+		7E7966D71810823500FA85AD /* icon-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-50@2x.png"; sourceTree = "<group>"; };
+		7E7966D81810823500FA85AD /* icon-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60.png"; sourceTree = "<group>"; };
+		7E7966D91810823500FA85AD /* icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-60@2x.png"; sourceTree = "<group>"; };
+		7E7966DA1810823500FA85AD /* icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76.png"; sourceTree = "<group>"; };
+		7E7966DB1810823500FA85AD /* icon-76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-76@2x.png"; sourceTree = "<group>"; };
+		7E7966DC1810823500FA85AD /* icon-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small.png"; sourceTree = "<group>"; };
+		7E7966DD1810823500FA85AD /* icon-small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-small@2x.png"; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* AlljoynDemo-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "AlljoynDemo-Info.plist"; path = "../AlljoynDemo-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x~iphone.png"; sourceTree = "<group>"; };
+		EB87FDF21871DA7A0020F90C /* merges */ = {isa = PBXFileReference; lastKnownFileType = folder; name = merges; path = ../../merges; sourceTree = "<group>"; };
+		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
+		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
+		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = "AlljoynDemo/config.xml"; sourceTree = "<group>"; };
+		09347493B41147BD9A051093 /* aj_about.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_about.c"; path = "org.allseen.alljoyn/aj_about.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		365EE2B048C943839D4F5C5A /* aj_bufio.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_bufio.c"; path = "org.allseen.alljoyn/aj_bufio.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		9B64AF13789348A0935B364D /* aj_bus.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_bus.c"; path = "org.allseen.alljoyn/aj_bus.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		DD5E626FB729453C9271D091 /* aj_cert.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_cert.c"; path = "org.allseen.alljoyn/aj_cert.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		AE243F965E4F43F6AFC402B9 /* aj_connect.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_connect.c"; path = "org.allseen.alljoyn/aj_connect.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		21116D3012894DF4ADCD1FE2 /* aj_crc16.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_crc16.c"; path = "org.allseen.alljoyn/aj_crc16.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		835A90FCE64E4AC1A9823EB8 /* aj_creds.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_creds.c"; path = "org.allseen.alljoyn/aj_creds.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		DD2F10024D13439BB1F15E8D /* aj_crypto.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_crypto.c"; path = "org.allseen.alljoyn/aj_crypto.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		FF025B2AD44C414194652F08 /* aj_crypto_ecc.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_crypto_ecc.c"; path = "org.allseen.alljoyn/aj_crypto_ecc.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		70E048F640AD4770A49A9110 /* aj_crypto_sha2.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_crypto_sha2.c"; path = "org.allseen.alljoyn/aj_crypto_sha2.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		B162A53FB34145E1BDC323A9 /* aj_debug.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_debug.c"; path = "org.allseen.alljoyn/aj_debug.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		4BF7FD441E7D4CE29C63E6F2 /* aj_disco.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_disco.c"; path = "org.allseen.alljoyn/aj_disco.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		CB7DEBF08E9B4CC5AD37FA35 /* aj_guid.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_guid.c"; path = "org.allseen.alljoyn/aj_guid.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		8EFB03F3DE7645D8B96C97C3 /* aj_helper.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_helper.c"; path = "org.allseen.alljoyn/aj_helper.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		74CD7F90157A4489998BB327 /* aj_init.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_init.c"; path = "org.allseen.alljoyn/aj_init.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		7BC64AA2C7DD423181FCFCBE /* aj_introspect.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_introspect.c"; path = "org.allseen.alljoyn/aj_introspect.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		3BB1E40CD9234512965ACE2C /* aj_keyauthentication.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_keyauthentication.c"; path = "org.allseen.alljoyn/aj_keyauthentication.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		BD481EF1EC4F4355956D1BAB /* aj_keyexchange.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_keyexchange.c"; path = "org.allseen.alljoyn/aj_keyexchange.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		20678EE60A494ADC8031606C /* aj_link_timeout.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_link_timeout.c"; path = "org.allseen.alljoyn/aj_link_timeout.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		DDF59E5E6B1E4F4095F5D1D5 /* aj_msg.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_msg.c"; path = "org.allseen.alljoyn/aj_msg.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		F53C71508B6B48FFA9ED482B /* aj_nvram.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_nvram.c"; path = "org.allseen.alljoyn/aj_nvram.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		DA92B49D309C4A2CA6E3DEB8 /* aj_peer.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_peer.c"; path = "org.allseen.alljoyn/aj_peer.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		A583ECFD412D46B78B5EE129 /* aj_serial.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_serial.c"; path = "org.allseen.alljoyn/aj_serial.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		94456FC5F17447E884535442 /* aj_serial_rx.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_serial_rx.c"; path = "org.allseen.alljoyn/aj_serial_rx.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		960234CB8C264DB2B2A3F5F9 /* aj_serial_tx.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_serial_tx.c"; path = "org.allseen.alljoyn/aj_serial_tx.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		99D436DB38F44EDFBC1A6D66 /* aj_std.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_std.c"; path = "org.allseen.alljoyn/aj_std.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		450FC37910CC4E7B8ABE1339 /* aj_util.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_util.c"; path = "org.allseen.alljoyn/aj_util.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		3330F0E2FA4A4A31BF39B1E4 /* sha2.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "sha2.c"; path = "org.allseen.alljoyn/sha2.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		1B3561335CEE4486A53A9842 /* aj_net.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_net.c"; path = "org.allseen.alljoyn/aj_net.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		4EA42782A36B4531AA103B76 /* aj_sw_crypto.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_sw_crypto.c"; path = "org.allseen.alljoyn/aj_sw_crypto.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		5F78033297E84AE0819CA54F /* aj_target_nvram.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_target_nvram.c"; path = "org.allseen.alljoyn/aj_target_nvram.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		C1754EC5BF8C4DB79E6B07EA /* aj_target_serial.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_target_serial.c"; path = "org.allseen.alljoyn/aj_target_serial.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		5106D2C782774AC19F4F115A /* aj_target_util.c */ = {isa = PBXFileReference; lastKnownFileType = unknown; name = "aj_target_util.c"; path = "org.allseen.alljoyn/aj_target_util.c"; sourceTree = "<group>"; fileEncoding = 4; };
+		521264F4DAA8432E857A2582 /* AllJoyn_Cordova.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "AllJoyn_Cordova.m"; path = "org.allseen.alljoyn/AllJoyn_Cordova.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		2DDF25F00142422C86C7251D /* aj_about.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_about.h"; path = "org.allseen.alljoyn/aj_about.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		4A76627E248C4B1DB932E2BF /* aj_auth_listener.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_auth_listener.h"; path = "org.allseen.alljoyn/aj_auth_listener.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		3C6105F9E99E467BB2AE9523 /* aj_bufio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_bufio.h"; path = "org.allseen.alljoyn/aj_bufio.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		002178D35C2D4FE9895AE5BF /* aj_bus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_bus.h"; path = "org.allseen.alljoyn/aj_bus.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		CE52CBB382FC4C019F41D8D2 /* aj_cert.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_cert.h"; path = "org.allseen.alljoyn/aj_cert.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		73021E83CB8545288E2B8387 /* aj_config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_config.h"; path = "org.allseen.alljoyn/aj_config.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		EA28CCF8FA5845A486FE83BD /* aj_connect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_connect.h"; path = "org.allseen.alljoyn/aj_connect.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		16A544E5660A44728E625A76 /* aj_crc16.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_crc16.h"; path = "org.allseen.alljoyn/aj_crc16.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		BD567C2402B84D668E82F81A /* aj_creds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_creds.h"; path = "org.allseen.alljoyn/aj_creds.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		B5BDCAFD83404C9BB40E2F0F /* aj_crypto.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_crypto.h"; path = "org.allseen.alljoyn/aj_crypto.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		3C045B6D775C4F11986CF075 /* aj_crypto_ecc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_crypto_ecc.h"; path = "org.allseen.alljoyn/aj_crypto_ecc.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		E122DE3D655E4B7EBFCD09B9 /* aj_crypto_sha2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_crypto_sha2.h"; path = "org.allseen.alljoyn/aj_crypto_sha2.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		6312ECDA28D14F5E90A6740B /* aj_debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_debug.h"; path = "org.allseen.alljoyn/aj_debug.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		8C37821C883C4164966938B1 /* aj_disco.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_disco.h"; path = "org.allseen.alljoyn/aj_disco.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		AA029B180312400DB2869378 /* aj_guid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_guid.h"; path = "org.allseen.alljoyn/aj_guid.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		7576888351C044D8BCD7790C /* aj_helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_helper.h"; path = "org.allseen.alljoyn/aj_helper.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		AFDCE394C6B64D5B89D6941D /* aj_init.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_init.h"; path = "org.allseen.alljoyn/aj_init.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		540A2480978845BD9AE64E6C /* aj_introspect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_introspect.h"; path = "org.allseen.alljoyn/aj_introspect.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		4579D71E832F4E72862A9AC0 /* aj_keyauthentication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_keyauthentication.h"; path = "org.allseen.alljoyn/aj_keyauthentication.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		A3A6967122A844CFA683EC08 /* aj_keyexchange.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_keyexchange.h"; path = "org.allseen.alljoyn/aj_keyexchange.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		AB073858978A4FDBB413B1F6 /* aj_link_timeout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_link_timeout.h"; path = "org.allseen.alljoyn/aj_link_timeout.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		F79846097B454A05A11F6215 /* aj_msg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_msg.h"; path = "org.allseen.alljoyn/aj_msg.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		A9D3E47E56B1451FBA6C59BF /* aj_msg_priv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_msg_priv.h"; path = "org.allseen.alljoyn/aj_msg_priv.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		7A364BB5542448D8959DA6AB /* aj_net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_net.h"; path = "org.allseen.alljoyn/aj_net.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		48AEC608D97349528E33A031 /* aj_nvram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_nvram.h"; path = "org.allseen.alljoyn/aj_nvram.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		AD1D513196B44D5FB0ED207F /* aj_peer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_peer.h"; path = "org.allseen.alljoyn/aj_peer.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		0A528A7B96884985A64DBCF0 /* aj_serial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_serial.h"; path = "org.allseen.alljoyn/aj_serial.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		737C1D183AB34D9189A60E14 /* aj_serial_rx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_serial_rx.h"; path = "org.allseen.alljoyn/aj_serial_rx.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		D63F2B0605F64B19A2E06A26 /* aj_serial_tx.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_serial_tx.h"; path = "org.allseen.alljoyn/aj_serial_tx.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		9E1B3378521446F49B526B1B /* aj_serio.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_serio.h"; path = "org.allseen.alljoyn/aj_serio.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		C56F7FBCAFE64448894D3FF0 /* aj_status.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_status.h"; path = "org.allseen.alljoyn/aj_status.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		57EB5C5FAFC7477C87993BE6 /* aj_std.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_std.h"; path = "org.allseen.alljoyn/aj_std.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		AE8186FE5A9A4DBEB316D4DB /* aj_util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_util.h"; path = "org.allseen.alljoyn/aj_util.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		E9F2F2D1DBA941BAAE2FC3EE /* aj_version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_version.h"; path = "org.allseen.alljoyn/aj_version.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		6E967DA16F2845C5A847FDF3 /* aj_wifi_ctrl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_wifi_ctrl.h"; path = "org.allseen.alljoyn/aj_wifi_ctrl.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		AB128DC6336C4E999EBC463C /* alljoyn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "alljoyn.h"; path = "org.allseen.alljoyn/alljoyn.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		D7661AA9A5964DABAB677982 /* sha2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "sha2.h"; path = "org.allseen.alljoyn/sha2.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		EAB39121197148DD92C62F59 /* aj_target_nvram.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_target_nvram.h"; path = "org.allseen.alljoyn/aj_target_nvram.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		CC5DE17C133A4D13BE42DFB7 /* aj_target.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "aj_target.h"; path = "org.allseen.alljoyn/aj_target.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		BF3B51A206BC44C6A621400F /* AllJoyn_Cordova.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "AllJoyn_Cordova.h"; path = "org.allseen.alljoyn/AllJoyn_Cordova.h"; sourceTree = "<group>"; fileEncoding = 4; };
+		68744FAD59284FDB90B13CB5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Security.framework"; path = "System/Library/Frameworks/Security.framework"; sourceTree = SDKROOT; fileEncoding = 4; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B1594DD16A7569C00FEF299 /* AssetsLibrary.framework in Frameworks */,
+				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
+				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
+				305D5FD1115AB8F900A74A75 /* MobileCoreServices.framework in Frameworks */,
+				837F23C8C203443E9A93AA43 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				302D95EE14D2391D003F00A1 /* MainViewController.h */,
+				302D95EF14D2391D003F00A1 /* MainViewController.m */,
+				302D95F014D2391D003F00A1 /* MainViewController.xib */,
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+			);
+			name = Classes;
+			path = "AlljoynDemo/Classes";
+			sourceTree = SOURCE_ROOT;
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* AlljoynDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				EB87FDF41871DAF40020F90C /* config.xml */,
+				EB87FDF31871DA8E0020F90C /* www */,
+				EB87FDF21871DA7A0020F90C /* merges */,
+				EB87FDF11871DA420020F90C /* Staging */,
+				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				307C750510C5A3420062BCA9 /* Plugins */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* AlljoynDemo-Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			path = "AlljoynDemo";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				308D052D1370CCF300D202BF /* icons */,
+				308D05311370CCF300D202BF /* splash */,
+				8D1107310486CEB800E47090 /* AlljoynDemo-Info.plist */,
+			);
+			name = Resources;
+			path = "AlljoynDemo/Resources";
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B1594DC16A7569C00FEF299 /* AssetsLibrary.framework */,
+				288765FC0DF74451002DB57D /* CoreGraphics.framework */,
+				305D5FD0115AB8F900A74A75 /* MobileCoreServices.framework */,
+				68744FAD59284FDB90B13CB5 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		301BF52E109A57CC0062928A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				301BF535109A57CC0062928A /* libCordova.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		307C750510C5A3420062BCA9 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+				09347493B41147BD9A051093 /* aj_about.c */,
+				365EE2B048C943839D4F5C5A /* aj_bufio.c */,
+				9B64AF13789348A0935B364D /* aj_bus.c */,
+				DD5E626FB729453C9271D091 /* aj_cert.c */,
+				AE243F965E4F43F6AFC402B9 /* aj_connect.c */,
+				21116D3012894DF4ADCD1FE2 /* aj_crc16.c */,
+				835A90FCE64E4AC1A9823EB8 /* aj_creds.c */,
+				DD2F10024D13439BB1F15E8D /* aj_crypto.c */,
+				FF025B2AD44C414194652F08 /* aj_crypto_ecc.c */,
+				70E048F640AD4770A49A9110 /* aj_crypto_sha2.c */,
+				B162A53FB34145E1BDC323A9 /* aj_debug.c */,
+				4BF7FD441E7D4CE29C63E6F2 /* aj_disco.c */,
+				CB7DEBF08E9B4CC5AD37FA35 /* aj_guid.c */,
+				8EFB03F3DE7645D8B96C97C3 /* aj_helper.c */,
+				74CD7F90157A4489998BB327 /* aj_init.c */,
+				7BC64AA2C7DD423181FCFCBE /* aj_introspect.c */,
+				3BB1E40CD9234512965ACE2C /* aj_keyauthentication.c */,
+				BD481EF1EC4F4355956D1BAB /* aj_keyexchange.c */,
+				20678EE60A494ADC8031606C /* aj_link_timeout.c */,
+				DDF59E5E6B1E4F4095F5D1D5 /* aj_msg.c */,
+				F53C71508B6B48FFA9ED482B /* aj_nvram.c */,
+				DA92B49D309C4A2CA6E3DEB8 /* aj_peer.c */,
+				A583ECFD412D46B78B5EE129 /* aj_serial.c */,
+				94456FC5F17447E884535442 /* aj_serial_rx.c */,
+				960234CB8C264DB2B2A3F5F9 /* aj_serial_tx.c */,
+				99D436DB38F44EDFBC1A6D66 /* aj_std.c */,
+				450FC37910CC4E7B8ABE1339 /* aj_util.c */,
+				3330F0E2FA4A4A31BF39B1E4 /* sha2.c */,
+				1B3561335CEE4486A53A9842 /* aj_net.c */,
+				4EA42782A36B4531AA103B76 /* aj_sw_crypto.c */,
+				5F78033297E84AE0819CA54F /* aj_target_nvram.c */,
+				C1754EC5BF8C4DB79E6B07EA /* aj_target_serial.c */,
+				5106D2C782774AC19F4F115A /* aj_target_util.c */,
+				521264F4DAA8432E857A2582 /* AllJoyn_Cordova.m */,
+				2DDF25F00142422C86C7251D /* aj_about.h */,
+				4A76627E248C4B1DB932E2BF /* aj_auth_listener.h */,
+				3C6105F9E99E467BB2AE9523 /* aj_bufio.h */,
+				002178D35C2D4FE9895AE5BF /* aj_bus.h */,
+				CE52CBB382FC4C019F41D8D2 /* aj_cert.h */,
+				73021E83CB8545288E2B8387 /* aj_config.h */,
+				EA28CCF8FA5845A486FE83BD /* aj_connect.h */,
+				16A544E5660A44728E625A76 /* aj_crc16.h */,
+				BD567C2402B84D668E82F81A /* aj_creds.h */,
+				B5BDCAFD83404C9BB40E2F0F /* aj_crypto.h */,
+				3C045B6D775C4F11986CF075 /* aj_crypto_ecc.h */,
+				E122DE3D655E4B7EBFCD09B9 /* aj_crypto_sha2.h */,
+				6312ECDA28D14F5E90A6740B /* aj_debug.h */,
+				8C37821C883C4164966938B1 /* aj_disco.h */,
+				AA029B180312400DB2869378 /* aj_guid.h */,
+				7576888351C044D8BCD7790C /* aj_helper.h */,
+				AFDCE394C6B64D5B89D6941D /* aj_init.h */,
+				540A2480978845BD9AE64E6C /* aj_introspect.h */,
+				4579D71E832F4E72862A9AC0 /* aj_keyauthentication.h */,
+				A3A6967122A844CFA683EC08 /* aj_keyexchange.h */,
+				AB073858978A4FDBB413B1F6 /* aj_link_timeout.h */,
+				F79846097B454A05A11F6215 /* aj_msg.h */,
+				A9D3E47E56B1451FBA6C59BF /* aj_msg_priv.h */,
+				7A364BB5542448D8959DA6AB /* aj_net.h */,
+				48AEC608D97349528E33A031 /* aj_nvram.h */,
+				AD1D513196B44D5FB0ED207F /* aj_peer.h */,
+				0A528A7B96884985A64DBCF0 /* aj_serial.h */,
+				737C1D183AB34D9189A60E14 /* aj_serial_rx.h */,
+				D63F2B0605F64B19A2E06A26 /* aj_serial_tx.h */,
+				9E1B3378521446F49B526B1B /* aj_serio.h */,
+				C56F7FBCAFE64448894D3FF0 /* aj_status.h */,
+				57EB5C5FAFC7477C87993BE6 /* aj_std.h */,
+				AE8186FE5A9A4DBEB316D4DB /* aj_util.h */,
+				E9F2F2D1DBA941BAAE2FC3EE /* aj_version.h */,
+				6E967DA16F2845C5A847FDF3 /* aj_wifi_ctrl.h */,
+				AB128DC6336C4E999EBC463C /* alljoyn.h */,
+				D7661AA9A5964DABAB677982 /* sha2.h */,
+				EAB39121197148DD92C62F59 /* aj_target_nvram.h */,
+				CC5DE17C133A4D13BE42DFB7 /* aj_target.h */,
+				BF3B51A206BC44C6A621400F /* AllJoyn_Cordova.h */,
+			);
+			name = Plugins;
+			path = "AlljoynDemo/Plugins";
+			sourceTree = SOURCE_ROOT;
+		};
+		308D052D1370CCF300D202BF /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				30C1856519D5FC0A00212699 /* icon-60@3x.png */,
+				7E7966D41810823500FA85AD /* icon-40.png */,
+				7E7966D51810823500FA85AD /* icon-40@2x.png */,
+				7E7966D61810823500FA85AD /* icon-50.png */,
+				7E7966D71810823500FA85AD /* icon-50@2x.png */,
+				7E7966D81810823500FA85AD /* icon-60.png */,
+				7E7966D91810823500FA85AD /* icon-60@2x.png */,
+				7E7966DA1810823500FA85AD /* icon-76.png */,
+				7E7966DB1810823500FA85AD /* icon-76@2x.png */,
+				7E7966DC1810823500FA85AD /* icon-small.png */,
+				7E7966DD1810823500FA85AD /* icon-small@2x.png */,
+				30FC414816E50CA1004E6F35 /* icon-72@2x.png */,
+				308D052E1370CCF300D202BF /* icon-72.png */,
+				308D052F1370CCF300D202BF /* icon.png */,
+				308D05301370CCF300D202BF /* icon@2x.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
+		308D05311370CCF300D202BF /* splash */ = {
+			isa = PBXGroup;
+			children = (
+				30B4F2FD19D5E07200D9F7D8 /* Default-667h.png */,
+				30B4F2FE19D5E07200D9F7D8 /* Default-736h.png */,
+				30B4F2FF19D5E07200D9F7D8 /* Default-Landscape-736h.png */,
+				D4A0D8751607E02300AEF8BB /* Default-568h@2x~iphone.png */,
+				3088BBB7154F3926009F9C59 /* Default-Landscape@2x~ipad.png */,
+				3088BBB8154F3926009F9C59 /* Default-Landscape~ipad.png */,
+				3088BBB9154F3926009F9C59 /* Default-Portrait@2x~ipad.png */,
+				3088BBBA154F3926009F9C59 /* Default-Portrait~ipad.png */,
+				3088BBBB154F3926009F9C59 /* Default@2x~iphone.png */,
+				3088BBBC154F3926009F9C59 /* Default~iphone.png */,
+			);
+			path = splash;
+			sourceTree = "<group>";
+		};
+		EB87FDF11871DA420020F90C /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+				F840E1F0165FE0F500CFE078 /* config.xml */,
+				301BF56E109A69640062928A /* www */,
+			);
+			name = Staging;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* AlljoynDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "AlljoynDemo" */;
+			buildPhases = (
+				304B58A110DAC018002A0835 /* Copy www directory */,
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				301BF551109A68C00062928A /* PBXTargetDependency */,
+			);
+			name = "AlljoynDemo";
+			productName = "AlljoynDemo";
+			productReference = 1D6058910D05DD3D006BFB54 /* AlljoynDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 510;
+			};
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "__CLI__" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				en,
+				es,
+				de,
+				se,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 301BF52E109A57CC0062928A /* Products */;
+					ProjectRef = 301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* AlljoynDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		301BF535109A57CC0062928A /* libCordova.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCordova.a;
+			remoteRef = 301BF534109A57CC0062928A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E7966E41810823500FA85AD /* icon-76.png in Resources */,
+				7E7966DF1810823500FA85AD /* icon-40@2x.png in Resources */,
+				308D05371370CCF300D202BF /* icon-72.png in Resources */,
+				30B4F30119D5E07200D9F7D8 /* Default-736h.png in Resources */,
+				308D05381370CCF300D202BF /* icon.png in Resources */,
+				308D05391370CCF300D202BF /* icon@2x.png in Resources */,
+				302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */,
+				7E7966E01810823500FA85AD /* icon-50.png in Resources */,
+				7E7966E31810823500FA85AD /* icon-60@2x.png in Resources */,
+				7E7966E61810823500FA85AD /* icon-small.png in Resources */,
+				3088BBBD154F3926009F9C59 /* Default-Landscape@2x~ipad.png in Resources */,
+				3088BBBE154F3926009F9C59 /* Default-Landscape~ipad.png in Resources */,
+				3088BBBF154F3926009F9C59 /* Default-Portrait@2x~ipad.png in Resources */,
+				7E7966E71810823500FA85AD /* icon-small@2x.png in Resources */,
+				3088BBC0154F3926009F9C59 /* Default-Portrait~ipad.png in Resources */,
+				30B4F30019D5E07200D9F7D8 /* Default-667h.png in Resources */,
+				7E7966DE1810823500FA85AD /* icon-40.png in Resources */,
+				3088BBC1154F3926009F9C59 /* Default@2x~iphone.png in Resources */,
+				7E7966E21810823500FA85AD /* icon-60.png in Resources */,
+				3088BBC2154F3926009F9C59 /* Default~iphone.png in Resources */,
+				D4A0D8761607E02300AEF8BB /* Default-568h@2x~iphone.png in Resources */,
+				30B4F30219D5E07200D9F7D8 /* Default-Landscape-736h.png in Resources */,
+				30C1856619D5FC0A00212699 /* icon-60@3x.png in Resources */,
+				7E7966E11810823500FA85AD /* icon-50@2x.png in Resources */,
+				7E7966E51810823500FA85AD /* icon-76@2x.png in Resources */,
+				30FC414916E50CA1004E6F35 /* icon-72@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		304B58A110DAC018002A0835 /* Copy www directory */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy www directory";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cordova/lib/copy-www-build-step.sh";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
+				64AD744253E24BDEA28ED24B /* aj_about.c in Resources */,
+				AC6F8E1648754A1785437C23 /* aj_bufio.c in Resources */,
+				E5881C7A18A74B2CB6A53531 /* aj_bus.c in Resources */,
+				3F3AC31414544D23B1100124 /* aj_cert.c in Resources */,
+				9EB742DAD5D149C9B68E9E41 /* aj_connect.c in Resources */,
+				A50BFF77B4F840BEAFD429B6 /* aj_crc16.c in Resources */,
+				C0185A6A84DB4716A60DD8DB /* aj_creds.c in Resources */,
+				1F7A91882A214EE9ABB9C768 /* aj_crypto.c in Resources */,
+				DB6870213A384055A7DACD1C /* aj_crypto_ecc.c in Resources */,
+				21820AF3A644412C9EC71999 /* aj_crypto_sha2.c in Resources */,
+				454FB6644D4148829D74BC43 /* aj_debug.c in Resources */,
+				54D8BAEE538144EDB949BC3C /* aj_disco.c in Resources */,
+				9AA67B514B224E1CB79486D4 /* aj_guid.c in Resources */,
+				034E3EEDB78E4E5399FAA1BB /* aj_helper.c in Resources */,
+				43CE72C9174D49129E45FC30 /* aj_init.c in Resources */,
+				E0F146A54E8C4F9EA1F4688C /* aj_introspect.c in Resources */,
+				5C9DCB797290429E891287AB /* aj_keyauthentication.c in Resources */,
+				2667ACB074C644FD9595DA37 /* aj_keyexchange.c in Resources */,
+				3977135D8FC34DEB93807A59 /* aj_link_timeout.c in Resources */,
+				F652F930A220436D8FBC6E4B /* aj_msg.c in Resources */,
+				C263F7D7373E44BE8FA35A69 /* aj_nvram.c in Resources */,
+				5C02AC8F0D0B4DEE80EB7A1D /* aj_peer.c in Resources */,
+				B8BB021C16D342BB8C8F90AC /* aj_serial.c in Resources */,
+				09F04DF03F884E61B07F184F /* aj_serial_rx.c in Resources */,
+				FF2D3A8F58EB48278EF4AE8D /* aj_serial_tx.c in Resources */,
+				A8C1900D08DD42DC8F235EA9 /* aj_std.c in Resources */,
+				453A00065BEF463D921F9D6D /* aj_util.c in Resources */,
+				5A173CC3C66C4F2EBEF219BC /* sha2.c in Resources */,
+				2AD2EBEDA2274FA3A2D6980B /* aj_net.c in Resources */,
+				41AF72DDA242472ABD6FB142 /* aj_sw_crypto.c in Resources */,
+				568A20699BA64469B8E6E2D7 /* aj_target_nvram.c in Resources */,
+				F4B92084548B498F921578CA /* aj_target_serial.c in Resources */,
+				28E3ED51B788421888249E19 /* aj_target_util.c in Resources */,
+				F14445BB189F40278B0B4616 /* AllJoyn_Cordova.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		301BF551109A68C00062928A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CordovaLib;
+			targetProxy = 301BF550109A68C00062928A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AlljoynDemo/AlljoynDemo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "AlljoynDemo/AlljoynDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					CoreFoundation,
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "AlljoynDemo";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AlljoynDemo/AlljoynDemo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				INFOPLIST_FILE = "AlljoynDemo/AlljoynDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					CoreFoundation,
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "AlljoynDemo";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					CoreFoundation,
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"\"$(TARGET_BUILD_DIR)/usr/local/lib/include\"",
+					"\"$(OBJROOT)/UninstalledProducts/include\"",
+					"\"$(BUILT_PRODUCTS_DIR)\"",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-weak_framework",
+					CoreFoundation,
+					"-weak_framework",
+					UIKit,
+					"-weak_framework",
+					AVFoundation,
+					"-weak_framework",
+					CoreMedia,
+					"-weak-lSystem",
+					"-ObjC",
+				);
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = NO;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "AlljoynDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "__CLI__" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
