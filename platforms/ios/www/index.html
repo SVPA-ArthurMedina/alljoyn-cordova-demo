@@ -47,6 +47,10 @@
 
         <div id="clientSection">
             <h3>Client Section</h3>
+            <div id="connectionClientSection" class="connectionSection">
+                <p id="connectionClientStatus" class="connectionStatus">Currently not Connected!</p>
+                <button type="button" id="connectionClientButton">Connect to Alljoyn</button>
+            </div>
             <div id="signalSection">
                 <label for="signalText" id="signalLabel" class="labels">Signal Value:</label>
                 <input type="text" id="signalText" class="sameLine"/>
@@ -71,6 +75,10 @@
 
         <div id="serverSection">
             <h3>Server Section</h3>
+            <div id="connectionServerSection" class="connectionSection">
+                <p id="connectionServerStatus" class="connectionStatus">Currently not Connected!</p>
+                <button type="button" id="connectionServerButton">Connect to Alljoyn</button>
+            </div>
             <div id="serverRespondMessages">
                 <label for="serverResponseText" id="serverResponseLabel" class="labels">Console:</label><br />
                 <textarea id="serverResponseText">***Alljoyn Information***</textarea>
@@ -79,5 +87,8 @@
 
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/clientService.js"></script>
+        <script type="text/javascript" src="js/serverService.js"></script>
+        <script type="text/javascript" src="js/alljoynWrapper.js"></script>
     </body>
 </html>

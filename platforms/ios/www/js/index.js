@@ -33,27 +33,18 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        app.receivedEvent('deviceready');
-
         var clientAppButton = document.getElementById('clientButton');
         var serverAppButton = document.getElementById('serverButton');
-
         var clientSection = document.getElementById('clientSection');
         var serverSection = document.getElementById('serverSection');
 
-        clientAppButton.addEventListener('click', function() {
-            console.log("Pressed client app button");
+        app.receivedEvent('deviceready');
 
-            serverSection.setAttribute('style', 'display:none');
-            clientSection.setAttribute('style', 'display:block');
-        });
+        // Setting up the client Button
+        setupAppButton(clientAppButton, serverSection, clientSection);
 
-        serverAppButton.addEventListener('click', function() {
-            console.log("Pressed server app button");
-
-            clientSection.setAttribute('style', 'display:none');
-            serverSection.setAttribute('style', 'display:block');
-        });
+        // Setting up the server button
+        setupAppButton(serverAppButton, clientSection, serverSection);
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -66,6 +57,21 @@ var app = {
 
         console.log('Received Event: ' + id);
     }
+};
+
+var setupAppButton = function(appButton, hideSectionDiv, showSectionDiv) {
+    appButton.addEventListener('click', function() {
+        console.log('Pressed ' + appButton.innerHTML + ' button');
+
+        hideSectionDiv.setAttribute('style', 'display:none');
+        showSectionDiv.setAttribute('style', 'display:block');
+
+        if (appButton.innerHTML === 'Client App') {
+            ClientService.startClientServices();
+        } else {
+            ServerService.startServerServices();
+        }
+    });
 };
 
 app.initialize();

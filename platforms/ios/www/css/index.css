@@ -129,6 +129,14 @@ h1 {
     text-transform: none;
 }
 
+.connectionSection {
+    margin-bottom: 10px;
+}
+
+.connectionStatus {
+    color: red;
+}
+
 /******************************************************
 ** Id Styles
 ******************************************************/
@@ -157,7 +165,7 @@ h1 {
 #responseText, #serverResponseText{
     margin-top: 5px;
     width: 99%;
-    height: 190px;
+    height: 120px;
     max-width: 99%;
-    max-height: 190px;
+    max-height: 120px;
 }

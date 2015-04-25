@@ -1,0 +1,5 @@
+var AlljoynWrapper = {
+    startAlljoynAppServices: function() {
+
+    }
+};
