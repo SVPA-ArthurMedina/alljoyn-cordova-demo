@@ -134,7 +134,13 @@ h1 {
 }
 
 .connectionStatus {
-    color: red;
+    color: blue;
+}
+
+.clientButtons:disabled {
+    background: #999;
+    color: #555;
+    cursor: default;
 }
 
 /******************************************************
@@ -146,7 +152,7 @@ h1 {
 }
 
 #clientSection, #serverSection {
-    margin: 80% 15px 20px 15px;
+    margin: 40% 15px 20px 15px;
     display: none;
 }
 

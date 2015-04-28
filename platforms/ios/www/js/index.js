@@ -59,6 +59,31 @@ var app = {
     }
 };
 
+var setupClientButtons = function(alljoynBus) {
+    var returnMethodButton = document.getElementById('returnMethodButton');
+    var responseTextInput = document.getElementById('responseText');
+    var signalTextInput = document.getElementById('signalText');
+    var methodTextInput = document.getElementById('methodText');
+    var signalButton = document.getElementById('signalButton');
+    var methodButton = document.getElementById('methodButton');
+
+    signalButton.addEventListener('click', function() {
+        var signalValue = signalTextInput.value;
+
+        console.log('The value of Signal is: ' + signalValue);
+    });
+
+    methodButton.addEventListener('click', function() {
+        var methodValue = methodTextInput.value;
+
+        console.log('The value of Method is: ' + methodValue);
+    });
+
+    returnMethodButton.addEventListener('click', function() {
+        console.log('Pressed the return method button.');
+    });
+};
+
 var setupAppButton = function(appButton, hideSectionDiv, showSectionDiv) {
     appButton.addEventListener('click', function() {
         console.log('Pressed ' + appButton.innerHTML + ' button');
@@ -66,8 +91,24 @@ var setupAppButton = function(appButton, hideSectionDiv, showSectionDiv) {
         hideSectionDiv.setAttribute('style', 'display:none');
         showSectionDiv.setAttribute('style', 'display:block');
 
+        var clientServicesSuccessful = function(alljoynBus) {
+            console.log('Setting up buttons Successful!');
+            var clientButtons = document.getElementsByClassName('clientButtons');
+            var i = clientButtons.length;
+
+            while(i--) {
+                clientButtons[i].disabled = false;
+            }
+
+            setupClientButtons(alljoynBus);
+        };
+
+        var clientServicesFailed = function() {
+            console.log('Setting up buttons failed!');
+        };
+
         if (appButton.innerHTML === 'Client App') {
-            ClientService.startClientServices();
+            ClientService.startClientServices(clientServicesSuccessful, clientServicesFailed);
         } else {
             ServerService.startServerServices();
         }

@@ -53,23 +53,23 @@
             </div>
             <div id="signalSection">
                 <label for="signalText" id="signalLabel" class="labels">Signal Value:</label>
-                <input type="text" id="signalText" class="sameLine"/>
-                <button type="button" id="signalButton">Send Signal</button>
+                <input type="text" id="signalText" class="sameLine clientButtons" disabled="disabled"/>
+                <button type="button" id="signalButton" class="clientButtons" disabled="disabled">Send Signal</button>
             </div>
 
             <div id="sendMethodSection">
                 <label for="methodText" id="methodLabel" class="labels">Method Value:</label>
-                <input type="text" id="methodText" class="sameLine"/>
-                <button type="button" id="methodButton">Send Method Call</button>
+                <input type="text" id="methodText" class="sameLine clientButtons" disabled="disabled"/>
+                <button type="button" id="methodButton" class="clientButtons" disabled="disabled">Send Method Call</button>
             </div>
 
             <div id="returnMethodSection">
-                <button type="button" id="returnMethodButton">Get Property Status Method Call</button>
+                <button type="button" id="returnMethodButton" class="clientButtons" disabled="disabled">Get Property Status Method Call</button>
             </div>
 
             <div id="respondMessages">
                 <label for="responseText" id="responseLabel" class="labels">Console:</label><br />
-                <textarea id="responseText">***Alljoyn Information***</textarea>
+                <textarea id="responseText" class="clientButtons" disabled="disabled">***Alljoyn Information***</textarea>
             </div>
         </div>
 
