@@ -37,9 +37,9 @@ var AlljoynWrapper = {
             port: portNumber
         };
 
-        var joinSuccessful = function() {
+        var joinSuccessful = function(session) {
             console.log('Joining session was Successful!');
-            return success();
+            return success(alljoynBus, session);
         };
 
         var joinFailed = function(status) {
@@ -48,6 +48,21 @@ var AlljoynWrapper = {
         };
 
         alljoynBus.joinSession(joinSuccessful, joinFailed, service);
+    },
+    registerObjects: function(success, failed, applicationObjects, proxyObjects) {
+        var registeredSuccessful = function() {
+            console.log('Objects were Registered!');
+
+            return success();
+        };
+
+        var registeredFailed = function() {
+            console.log('Failed to register objects');
+
+            return failed();
+        };
+
+        AllJoyn.registerObjects(registeredSuccessful, registeredFailed, applicationObjects, proxyObjects);
     }
 };
 

@@ -59,7 +59,11 @@ var app = {
     }
 };
 
-var setupClientButtons = function(alljoynBus) {
+var appendToResponseMessage = function(responseMessage, appendedMessage) {
+    responseMessage.value = responseMessage.value + "\n- " + appendedMessage;
+};
+
+var setupClientButtons = function(alljoynBus, session) {
     var returnMethodButton = document.getElementById('returnMethodButton');
     var responseTextInput = document.getElementById('responseText');
     var signalTextInput = document.getElementById('signalText');
@@ -71,17 +75,68 @@ var setupClientButtons = function(alljoynBus) {
         var signalValue = signalTextInput.value;
 
         console.log('The value of Signal is: ' + signalValue);
+
+        appendToResponseMessage(responseTextInput, "Sending a Signal with the value of: " + signalValue);
+
+        ClientService.sendSignal(session, signalValue,
+            function() {
+                // Success Callback
+                console.log('Signal was successfully sent!');
+                appendToResponseMessage(responseTextInput, 'Successfully sent the signal!');
+
+            }, function() {
+                // Error Callback
+                console.log('Sending signal failed!');
+                appendToResponseMessage(responseTextInput, 'Failed to send the signal!');
+            });
+
+        signalTextInput.value = '';
     });
 
     methodButton.addEventListener('click', function() {
         var methodValue = methodTextInput.value;
 
         console.log('The value of Method is: ' + methodValue);
+
+        appendToResponseMessage(responseTextInput, "Calling the setCount method with the value of: " + methodValue);
+
+        ClientService.callAlljoynMethod(session, methodValue,
+            function(returnValues) {
+                // Success Callback
+                console.log('Calling method was Successful!');
+                appendToResponseMessage(responseTextInput, 'Calling method was successful! Return value is: ');
+            }, function() {
+                // Fail Callback
+                console.log('Calling method Failed!');
+                appendToResponseMessage(responseTextInput, 'Failed to call method!');
+            });
+
+        methodTextInput.value = '';
     });
 
     returnMethodButton.addEventListener('click', function() {
-        console.log('Pressed the return method button.');
+        console.log('Pressed the Get Property method button.');
+
+        appendToResponseMessage(responseTextInput, 'Getting the property...');
+
+        ClientService.getAlljoynProperty(session,
+            function(returnValue) {
+                // Success Callback
+                console.log('Get Property was successful!');
+                appendToResponseMessage(responseTextInput, 'Get Property was successful! Return value is: ');
+            }, function() {
+                // Failed Callback
+                console.log('Get Property failed!');
+                appendToResponseMessage(responseTextInput, 'Get Property Failed!');
+            });
     });
+};
+
+var setupServerListeners = function(alljoynBus, session) {
+    var responseServerTextarea = document.getElementById('serverResponseText');
+
+    ServerService.setupSignalListener(alljoynBus, responseServerTextarea);
+    ServerService.setupSetCounterListener(alljoynBus, responseServerTextarea);
 };
 
 var setupAppButton = function(appButton, hideSectionDiv, showSectionDiv) {
@@ -91,26 +146,32 @@ var setupAppButton = function(appButton, hideSectionDiv, showSectionDiv) {
         hideSectionDiv.setAttribute('style', 'display:none');
         showSectionDiv.setAttribute('style', 'display:block');
 
-        var clientServicesSuccessful = function(alljoynBus) {
-            console.log('Setting up buttons Successful!');
+        var clientServicesSuccessful = function(alljoynBus, session) {
+            console.log('Connection Services Successful!');
             var clientButtons = document.getElementsByClassName('clientButtons');
             var i = clientButtons.length;
 
-            while(i--) {
+            while (i--) {
                 clientButtons[i].disabled = false;
             }
 
-            setupClientButtons(alljoynBus);
+            setupClientButtons(alljoynBus, session);
         };
 
-        var clientServicesFailed = function() {
+        var serverServicesSuccessful = function(alljoynBus, session) {
+            console.log('Connection Services was successful!');
+
+            setupServerListeners(alljoynBus, session);
+        };
+
+        var servicesFailed = function() {
             console.log('Setting up buttons failed!');
         };
 
         if (appButton.innerHTML === 'Client App') {
-            ClientService.startClientServices(clientServicesSuccessful, clientServicesFailed);
+            ClientService.startClientServices(clientServicesSuccessful, servicesFailed);
         } else {
-            ServerService.startServerServices();
+            ServerService.startServerServices(serverServicesSuccessful, servicesFailed);
         }
     });
 };
